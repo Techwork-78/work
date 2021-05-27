@@ -1,0 +1,68 @@
+.post {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0;
+}
+.right {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.po-head {
+  display: flex;
+  align-items: center;
+}
+.po-main > img {
+  width: 50vw;
+  height: 50vw;
+  border: none;
+  border-radius: unset;
+  margin-bottom: 0;
+}
+.black {
+  color: black;
+}
+.po-main {
+  background: -webkit-linear-gradient(rgb(49, 48, 48), black);
+  width: max-content;
+  max-width: 61vw;
+  border-radius: 35px;
+}
+.po-cap {
+  padding: 0 40px;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+
+.po-user {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 7px;
+  margin-bottom: -5px;
+  padding: 0 30px;
+  color: blue;
+}
+
+.time {
+  font-size: 12px;
+  position: absolute;
+  margin: 0px 0 0 40px;
+}
+
+.p-img {
+  width: 50vw;
+  height: 50vw;
+  border: none;
+  border-radius: unset;
+  margin-bottom: 0;
+}
+
+.zoom {
+  transition: all 200ms ease-in-out;
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+  background-color: black;
+}

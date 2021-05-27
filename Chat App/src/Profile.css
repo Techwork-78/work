@@ -1,0 +1,213 @@
+.profile {
+  width: 100vw;
+  padding: 70px 0;
+  padding-bottom: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: -webkit-linear-gradient(rgb(5, 5, 128), rgb(5, 5, 5), black);
+  background-attachment: fixed;
+  overflow-y: scroll;
+}
+.e-profile {
+  background: -webkit-linear-gradient(rgb(46, 45, 45), black);
+  padding: 0px 10px;
+  height: 50%;
+  width: 80%;
+  margin: 10% auto;
+}
+
+html::-webkit-scrollbar,
+.profile::-webkit-scrollbar,
+.p-posts::-webkit-scrollbar {
+  display: none;
+}
+
+.p-head {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.p-img > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1.5px solid blue;
+}
+.e-img > img {
+  width: 70px;
+  height: 70px;
+  opacity: 0.3;
+}
+.p-bio {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: white;
+}
+.p-bio > p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.cam {
+  position: absolute;
+  margin: 35px -80px;
+}
+.e-img-btn > button {
+  position: absolute;
+  margin: 0 15px;
+  border-radius: 50px;
+  outline: none;
+  background-color: blue;
+  color: white;
+  width: 75px;
+  height: 30px;
+  border: none;
+  font-size: 11px;
+  padding: 10px;
+}
+.e-img > input {
+  position: absolute;
+  margin: 30px -75px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+}
+.e-img-btn > progress {
+  position: absolute;
+  margin: 50px 10px;
+  width: 85px;
+  height: 5px;
+  color: blue;
+}
+.p-bio > h1 {
+  font-size: 29px;
+}
+.p-posts {
+  display: flex;
+  justify-content: space-around;
+  justify-self: center;
+  flex-wrap: wrap;
+  padding: 10px 10px 5rem 10px;
+  overflow-y: scroll;
+}
+.p-posts > img {
+  width: 26vw;
+  height: 26vw;
+  object-fit: contain;
+  margin: 5px;
+  border: 1px solid blue;
+  border-radius: 7% 0 7% 0;
+}
+.p-posts > img:focus {
+  transition: all 200ms ease-in-out;
+  transform: scale(3);
+}
+
+.edit {
+  position: absolute;
+  right: 20px;
+  margin-top: 20px;
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+.close {
+  position: absolute;
+  right: 10vw;
+}
+
+.e-bio {
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.e-bio > div {
+  display: flex;
+  align-items: center;
+}
+.e-bio > div > input,
+.e-bio > div > textarea {
+  width: 50vw;
+  height: 50px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid blue;
+  margin-left: 40px;
+  text-decoration: none;
+  text-indent: 10px;
+  color: blue;
+  font-size: 18px;
+}
+.e-bio > div > input:focus,
+.e-bio > div > textarea:focus {
+  outline: none;
+}
+.e-bio > div > textarea::-webkit-scrollbar {
+  display: none;
+}
+.e-bio > div > textarea {
+  resize: none;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.e-bio > button {
+  border-radius: 50px;
+  outline: none;
+  background-color: blue;
+  color: white;
+  height: 40px;
+  margin: 20px 0 0 30px;
+  width: 100px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+@media (max-width: 1000px) {
+  .e-img-btn > button {
+    width: 85px;
+    margin-left: 10px;
+  }
+  .e-img-btn > progress {
+    width: 87px;
+  }
+  .e-bio {
+    padding-top: 50px;
+    margin-left: -30px;
+  }
+  .p-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .e-profile {
+    margin-top: 20vh;
+  }
+  .e-bio > div > input {
+    font-size: 15px;
+    height: 30px;
+  }
+  .e-bio > div > textarea {
+    font-size: 12px;
+    height: 30px;
+  }
+}
+
+.zoom {
+  transition: all 200ms ease-in-out;
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+  background-color: black;
+}

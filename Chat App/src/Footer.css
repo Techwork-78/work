@@ -1,0 +1,75 @@
+.footer {
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+
+  background: -webkit-linear-gradient(black, rgb(36, 35, 35));
+}
+.f-cont {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.f-msg {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border: 1px solid blue;
+  border-radius: 50px;
+  color: blue;
+  font-size: 18px;
+  text-indent: 20px;
+  margin: 20px;
+}
+
+.f-inp {
+  width: 65vw;
+  height: 50px;
+  background: transparent;
+  color: blue;
+  font-size: 18px;
+  text-indent: 20px;
+  border: hidden;
+}
+.f-inp2 {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  margin-left: 65vw;
+  opacity: 0;
+}
+.f-msg > input:focus {
+  outline: none;
+}
+.MuiSvgIcon-root {
+  color: blue;
+  padding: 0 10px;
+}
+.f-send {
+}
+#send {
+  width: 8vw;
+  margin-right: 20px;
+  margin-left: -20px;
+}
+
+.no-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
+  padding: 10px;
+  background: -webkit-linear-gradient(black, rgb(36, 35, 35));
+}
+
+.sky {
+  border: 1.5px solid rgb(4, 178, 247) !important;
+}
+.skyblue {
+  color: rgb(2, 177, 247) !important;
+}

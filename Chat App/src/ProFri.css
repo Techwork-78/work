@@ -1,0 +1,29 @@
+.proFri {
+  width: 100vw;
+}
+
+.pf-img > img {
+  width: 37vw;
+  height: 37vw;
+  margin-top: 70px;
+}
+
+.pf-bio {
+  text-align: center;
+  width: 40vw;
+}
+
+.no-po {
+  height: 100vh;
+}
+
+.zoom {
+  transition: all 200ms ease-in-out;
+  width: 100vw;
+  height: 100vw;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  z-index: 10;
+  background-color: black;
+}

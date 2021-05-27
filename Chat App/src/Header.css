@@ -1,0 +1,46 @@
+.header {
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: -webkit-linear-gradient(rgb(32, 32, 32), black);
+  position: fixed;
+  z-index: 10;
+}
+.light {
+  background: -webkit-linear-gradient(
+    rgb(216, 214, 214),
+    white,
+    white
+  ) !important;
+}
+img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 15px;
+  border-radius: 50%;
+  border: 1.5px solid blue;
+  -webkit-tap-highlight-color: black;
+}
+.logo {
+  border-style: initial;
+  border-radius: 0;
+}
+.h-navs {
+  display: flex;
+  align-items: center;
+  flex: 0.2;
+  justify-content: flex-end;
+}
+a > img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.MuiSvgIcon-root {
+  color: blue;
+  padding: 0 10px;
+}

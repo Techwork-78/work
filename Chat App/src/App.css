@@ -1,0 +1,22 @@
+html {
+}
+
+.App {
+  color: white;
+  background: -webkit-linear-gradient(
+    black,
+    rgb(10, 10, 148),
+    black
+  ) !important;
+  background-attachment: fixed !important;
+}
+.lightApp {
+  background: -webkit-linear-gradient(white, skyblue, white) !important;
+  background-attachment: fixed !important;
+}
+
+.signout {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 200px;
+}
