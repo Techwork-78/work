@@ -1,0 +1,199 @@
+html {
+  background-color: #111111;
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  #root {
+    width: 360px;
+  }
+  .app {
+    background-color: #111;
+    display: grid;
+    grid-template-areas: "nav", "banner", "row";
+    grid-template-columns: 310px !important;
+    grid-template-rows: 100% !important;
+    height: 100%;
+  }
+}
+#root {
+  width: 100% !important;
+  height: 100%;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.app {
+  background-color: #111;
+  display: grid;
+  grid-template-areas: "nav", "banner", "row";
+  grid-template-columns: 100% !important;
+  grid-template-rows: 100% !important;
+  height: 100%;
+  width: 100%;
+}
+.nav {
+  grid-area: nav !important;
+  flex-wrap: wrap !important;
+}
+.banner {
+  grid-area: banner !important;
+}
+.row {
+  grid-area: row !important;
+  flex-wrap: wrap !important;
+}
+.sign {
+  background-image: url("https://mppmduse2pmpovwapp.azurewebsites.net/wp-content/uploads/2019/09/netflix-background-9.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.signUp {
+  display: flex;
+  place-items: center;
+  padding: 15px;
+  flex-direction: column;
+  color: white;
+  align-items: center !important;
+}
+
+.signUp > h1 {
+  margin-bottom: -3px;
+  font-size: 28px;
+  text-align: center;
+}
+.signUp > h4 {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: -20px;
+  font-size: 28px;
+}
+.signUp > h6 {
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+  width: 70%;
+  margin-bottom: -10px;
+}
+.signUp > input,
+.pw > input {
+  height: 45px;
+  margin: 5px;
+  border: none;
+  border-radius: 1px;
+  padding-left: 5px;
+  font-family: Helvetica;
+}
+
+.signUp > input {
+  margin-top: 20px;
+  width: 75%;
+  text-indent: 10px;
+}
+
+.pw {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+
+.pw > input {
+  margin-left: -1px;
+  width: 100%;
+  margin-right: 5px;
+  font-family: Helvetica;
+  text-indent: 10px;
+}
+.pw > button,
+.inps > button,
+.btn-2,
+form > button {
+  height: 45px;
+  border-radius: 1px;
+  background-color: red;
+  color: white;
+  border-style: hidden;
+  font-family: Helvetica;
+}
+
+.gradient {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  height: 15.5rem;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(19, 18, 18, 0.61),
+    #111
+  );
+}
+.gradientTop {
+  margin-bottom: 0.2rem;
+  height: 7.8rem;
+  background-image: linear-gradient(
+    180deg,
+    #111,
+    rgba(19, 18, 18, 0.61),
+    transparent
+  );
+}
+
+.signup-cont {
+  color: white;
+  background-color: #111;
+  height: 100vh;
+}
+
+.log {
+  margin-top: 10%;
+  padding: 20px;
+}
+
+.inps {
+  display: flex;
+  flex-direction: column;
+}
+.inps > input,
+form > input {
+  color: white;
+  height: 48px;
+  margin: 5px 0;
+  border: hidden;
+  border-radius: 1px;
+  background-color: #333333;
+  font-family: Helvetica;
+  padding: 10px;
+}
+
+.inps > button,
+form > button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.s-pas {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.s-pas > p {
+  color: #737373;
+  size: 16px;
+  font-family: Helvetica;
+}
+.s-pas > p > a {
+  text-decoration: none;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}

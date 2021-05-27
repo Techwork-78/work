@@ -1,0 +1,66 @@
+.row {
+  margin: 0 10px;
+  color: white;
+}
+
+.posters {
+  display: flex !important;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px 0px;
+}
+.row > h2 {
+  font-size: 1.5rem;
+}
+.posters::-webkit-scrollbar {
+  display: none;
+}
+
+.poster {
+  object-fit: contain;
+  width: 150px;
+  max-height: 100px;
+  margin: 5px;
+  transition: transform 450ms;
+}
+
+.poster:hover {
+  transform: scale(1.08);
+}
+
+.poster_large {
+  max-height: 250px;
+}
+
+.poster_large:hover {
+  transform: scale(1.06);
+}
+
+.load {
+  color: aliceblue;
+  font-family: "Tangerine";
+  font-size: x-large;
+  font-weight: 900;
+  text-shadow: 0px 0px 1px red;
+}
+
+.loader {
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top: 10px solid red;
+  box-shadow: 0px 0px 20px 0px red;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  margin-left: 43%;
+  align-items: center;
+}

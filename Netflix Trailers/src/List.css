@@ -1,0 +1,22 @@
+.list {
+  background-color: #111;
+  color: white;
+  height: 100vh;
+}
+
+.list > h1 {
+  margin-left: 10px;
+}
+
+.ps {
+  margin-left: 10px;
+}
+
+.flex {
+  display: flex;
+  padding: 5% 5% 5% 0;
+  align-items: center;
+}
+.flex > p {
+  margin-left: 5%;
+}
